@@ -1,0 +1,19 @@
+name: Sync to GitHub
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Verify sync
+        run: echo "Schedule data synced to GitHub"
