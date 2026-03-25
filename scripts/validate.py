@@ -19,8 +19,8 @@ def validate_schedule(filepath):
     
     content = filepath.read_text(encoding='utf-8')
     
-    # 匹配记录格式
-    pattern = r'- (\d{4}-\d{2}-\d{2} \d{2}:\d{2}) \| \[(.+?)\] \| \[(.+?)\] \| (.+?) \| #(.+?)(?: \| (.+))?'
+    # 匹配记录格式（时间部分 HH:MM 可选）
+    pattern = r'- (\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2})?) \| \[(.+?)\] \| \[(.+?)\] \| (.+?) \| #(.+?)(?: \| (.+))?'
     
     records = []
     errors = []

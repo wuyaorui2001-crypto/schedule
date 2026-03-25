@@ -1,5 +1,27 @@
 # MEMORY - 日程管理项目复盘
 
+## 2026-03-25 | v4.0 优化
+
+**背景**: 5年支持 + 无缝继承 + 无缝迁移
+
+**执行内容**：
+1. 移除 reminder skill（不再使用）
+2. 创建 scripts/parser.py - 统一解析模块
+3. 创建 scripts/config.py - 集中配置
+4. 创建 scripts/recalc.py - 自动统计计算
+5. 重写 SYSTEM.md - 更新 SOP，移除 reminder 引用
+6. 提醒改用 cc-connect（Telegram）
+
+**关键决策**：
+- reminder skill 去掉（用户确认不用）
+- 数据保留在 2026.md（8条记录）
+- 提醒通过 cc-connect（已有基础设施）
+
+**通用规则沉淀**：
+- 参考 finance-ledger 的 parser/config/recalc 模式
+
+---
+
 ## 项目历史
 
 ### 2025-03-18 项目创建与优化

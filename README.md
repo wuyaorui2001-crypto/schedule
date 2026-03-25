@@ -35,6 +35,7 @@ schedule/
 ├── .learnings/        # 自动学习记录
 ├── 2026.md           # 2026年日程数据
 └── scripts/           # 工具脚本
+    ├── auto-sync.py   # 自动同步GitHub
     └── validate.py    # 格式校验
 ```
 
